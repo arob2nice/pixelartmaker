@@ -32,9 +32,9 @@ color value.
 */
 
 function makeGrid(height, width) {
-  for (var i = 0; i <= height; i++) {
+  for (var i = 0; i < height; i++) {
     var row = tble.insertRow(0);
-    for (var j = 0; j <= width; j++) {
+    for (var j = 0; j < width; j++) {
       var cell = row.insertCell(0);
       tble.addEventListener('click', function() {
         event.target.style.backgroundColor = pickColor.value;
